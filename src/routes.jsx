@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './Pages/Home';
-import About from './Pages/About';
-import Politics from './Pages/Politics';
+import Inventario from './Pages/Inventario';
+import Dashbords from './Pages/Dashbords';
 
 function AppRoutes() {
   return (
@@ -10,8 +10,8 @@ function AppRoutes() {
         <Layout>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="politics" element={<Politics />} />
+                <Route path="/Dashbords" element={<Inventario />} />
+                <Route path="/Dashbords" element={<Dashbords />} />
             </Routes>
         </Layout>
     </BrowserRouter>
