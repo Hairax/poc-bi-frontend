@@ -10,8 +10,8 @@ function AppRoutes() {
         <Layout>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Dashbords" element={<Inventario />} />
-                <Route path="/Dashbords" element={<Dashbords />} />
+                <Route path="/inventario" element={<Inventario />} />
+                <Route path="/dashbords" element={<Dashbords />} />
             </Routes>
         </Layout>
     </BrowserRouter>

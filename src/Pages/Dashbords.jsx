@@ -1,3 +1,4 @@
+import MetricsChart from "../Components/MetricsChart";
 const Dashbords = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white">
@@ -10,10 +11,12 @@ const Dashbords = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Políticas del Teatro</h1>
-          <p className="text-xl text-gray-200">Normas y lineamientos para una experiencia excepcional</p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">Dashbords</h1>
         </div>
       </div>
+
+      <h1>Dashboard de Mantenimiento</h1>
+      <MetricsChart />
     </div>
   );
 };

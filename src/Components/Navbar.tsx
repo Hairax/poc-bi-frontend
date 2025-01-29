@@ -5,11 +5,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-800 text-white">
+    <nav className="bg-white text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold">Teatro Suavidad</h1>
+            <h1 className="text-2xl font-bold">Poc BI</h1>
           </div>
           {/* Botón de menú para móviles */}
           <div className="-mr-2 flex md:hidden">
@@ -55,32 +55,31 @@ const Navbar = () => {
           </div>
           {/* Opciones de navegación */}
           <div className="hidden md:flex space-x-4">
-            <a href="/" className="hover:bg-slate-700 px-3 py-2 rounded-md text-sm font-medium">
+            <a href="/" className="hover:underline px-3 py-2 rounded-md text-sm font-medium">
               Home
             </a>
-            <a href="/about" className="hover:bg-slate-700 px-3 py-2 rounded-md text-sm font-medium">
-              Acerca de
+            <a href="/dashbords" className="hover:underline px-3 py-2 rounded-md text-sm font-medium">
+              Dashbords
             </a>
-            <a href="/politics" className="hover:bg-slate-700 px-3 py-2 rounded-md text-sm font-medium">
-              Políticas
+            <a href="/inventario" className="hover:underline px-3 py-2 rounded-md text-sm font-medium">
+              Inventario
             </a>
           </div>
         </div>
       </div>
       {/* Menú desplegable en móviles */}
       {isOpen && (
-        <div className="md:hidden bg-slate-800">
+        <div className="md:hidden bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="/" className="block hover:bg-slate-700 px-3 py-2 rounded-md text-base font-medium">
+            <a href="/" className="block hover:underline px-3 py-2 rounded-md text-base font-medium">
               Home
             </a>
-            <a href="/about" className="block hover:bg-slate-700 px-3 py-2 rounded-md text-base font-medium">
-              Acerca de
+            <a href="/dashbords" className="block hover:underline px-3 py-2 rounded-md text-base font-medium">
+              Dashbords
             </a>
-            <a href="/politics" className="block hover:bg-slate-700 px-3 py-2 rounded-md text-base font-medium">
-              Políticas
+            <a href="/inventario" className="block hover:underline px-3 py-2 rounded-md text-base font-medium">
+              Inventario
             </a>
-            
           </div>
         </div>
       )}
